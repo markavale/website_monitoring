@@ -12,25 +12,14 @@ What things you need to install the software.
 * Pip.
 
 ## Install
-
-Clone the git repository on your computer
-
-```
-$ git clone https://github.com/neoighodaro/python-pusher-traffic-monitor
-```
-
-You can also download the entire repository as a zip file and unpack in on your computer if you do not have git.
-
 After cloning the application, you need to install it's dependencies.
 
 ```
 $ cd path/to/project
 $ python3 -m venv .venv # activate virtual environment (you can use the other command too)
 $ source .venv/bin/activate # windows has their own method
+$ pip install -r requirements.txt
 $ python dbsetup.py
-$ pip install flask
-$ pip install httpagentparser
-$ pip install pusher
 $ export FLASK_ENVIRONMENT=development # not necessary
 $ flask run
 ```
